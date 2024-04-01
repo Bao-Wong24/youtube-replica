@@ -1,0 +1,134 @@
+.subscribe-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 20px;
+  padding: 10px 16px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+
+.subscribe-button:hover {
+ opacity: 0.7;
+}
+
+.subscribe-button:active {
+ opacity: 0.4;
+}
+
+.join-button {
+  background-color: white;
+  border-color: rgb(13, 95, 189);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(13, 95, 189);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 9px 16px;
+  transition: background-color 0.15s, 
+   color 0.15s;
+}
+
+.join-button:hover {
+  background-color: rgb(13, 95, 189);
+  color: white;
+}
+
+.join-button:active {
+  opacity: 0.7;
+}
+
+.tweet-button {
+  background-color: rgb(23, 153, 208);
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 35px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.uber-button {
+  margin-top: 8px;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  font-size: 9px;
+  border-width: 4px;
+  cursor: pointer;
+}
+
+#Amazon-button {
+  margin-top: 8px;
+  margin-left: 8px;
+  background-color: rgb(255, 216, 20);
+  font-size: 11px;
+  border-radius: 18px;
+  border-style: 1px;
+  border: none;
+  font-size: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a[href$=".com"]:hover {
+  margin: 10px;
+  color: rgb(246, 89, 89);
+}
+
+a:visited {
+  color: rgb(0, 113, 133);
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  color: rgb(0, 118, 0);
+  font-weight: bold;
+}
+
+.add-cart {
+  background-color: rgb(255, 216, 20);
+  border: none;
+  padding: 4px 17px;
+  border-radius: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: opacity 0.10s;
+}
+
+.add-cart:active {
+  opacity: 0.6;
+ 
+}
+
+.buy-now {
+  background-color: rgb(255, 164, 28);
+  border: none;
+  padding: 4px 16px;
+  border-radius: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: opacity 0.10s;
+}
+
+.buy-now:hover {
+  padding-bottom: 15px;
+  padding-right: 40px;
+}
+.buy-now:active {
+  opacity: 0.6;
+}
