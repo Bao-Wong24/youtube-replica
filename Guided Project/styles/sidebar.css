@@ -1,3 +1,5 @@
+@import url("../styles/video.css");
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -7,7 +9,6 @@
   width: 72px;
   z-index: 200;
   padding-top: 5px;
-
 }
 
 .sidebar-link {
@@ -23,12 +24,97 @@
   cursor: pointer;
 }
 
-.sidebar-link > img {
+.sidebar-link img {
   height: 24px;
   margin-bottom: 4px;
 }
 
-.sidebar > div {
-  font-family: Roboto, Arial;
+.sidebar  div {
   font-size: 10px;
+}
+
+/* Using responsive design, create this expanded sidebar design
+when the page is >= 1200px wide*/ 
+
+@media (max-width: 1200px) {
+  .sidebar {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 100;
+    padding-top: 5px;
+  }
+
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .sidebar-link div {
+    font-size: 10px;
+    font-family: Roboto, Arial;
+  }
+}
+
+@media (min-width: 1200.1px) {
+  .sidebar {
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 240px;
+    z-index: 200;
+    padding-top: 13px;
+  }
+
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 24px;
+    flex-direction: row;
+    text-align: justify;
+    margin-right: 60px;;
+  }
+
+   .sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+
+   }
+
+   .sidebar-link:hover div {
+    margin-right: 60px;
+    white-space: nowrap;
+ 
+   }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-right: 24px;
+  }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 80%;
+  }
 }

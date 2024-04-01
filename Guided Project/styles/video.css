@@ -4,6 +4,8 @@
 
 .thumbnail-row {
   margin-bottom: 8px;
+  margin-right: 20px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -44,6 +46,7 @@
   border: none;
   position: absolute;
   top: 50px;
+  pointer-events: none;
   transform: scale(0.9);
   opacity: 0;
  
@@ -59,8 +62,6 @@
   transition: opacity 0.3s;
   
 }
-
-
 
 .video-info-container .video-author-info {
   padding-left: 20px;
@@ -109,17 +110,45 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
-  row-gap: 39px;
+  row-gap: 40px;
 }
 
+@media (min-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+  }
+
+}
+
+
+
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 2px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 2px;
+  padding: 4px;
   background-color: black;
   border-radius: 2px;
   color: #fff;
